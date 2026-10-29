@@ -118,7 +118,9 @@ h1
 
 .portrait
 {
-    max-width: 1000px;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
     height: auto;
     background-color: #ffffffa1;
     padding: 20px;
@@ -127,7 +129,8 @@ h1
 
 .portrait-image
 {
-    max-width: 400px;
+    width: 1500px;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -233,7 +236,20 @@ iframe
 
 }
 
+.flex
+{
+    display: flex;
+    gap: 20px;
 }
+
+.flex img
+{
+    max-width: 50%;
+    height: auto;
+}
+
+}
+
 
 
 
@@ -294,7 +310,9 @@ h1
 
 .portrait
 {
-    max-width: 1000px;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
     height: auto;
     background-color: #ffffffa1;
     padding: 20px;
@@ -345,8 +363,8 @@ button
     color: #000000;
 }
 
-.JP iframe {
-    max-width: 720px;
+.JP iframe, .FR iframe, .EN iframe, .flex iframe {
+    max-width: 100%;
     width: 100%;
 }
 
@@ -356,11 +374,6 @@ button
     padding: 20px;
     border-radius: 20px;
     color: #000000;
-}
-
-.FR iframe {
-    max-width: 720px;
-    width: 100%;
 }
 
 .EN
@@ -380,6 +393,7 @@ iframe
 
 .portrait-image
 {
+    width: 500px;
     max-width: 100%;
     height: auto;
     display: block;
@@ -471,6 +485,12 @@ iframe
     cursor: pointer;
 }
 
+.flex img
+{
+    max-width: 100%;
+    height: auto;
+}
+
 }
 
 
@@ -488,4 +508,17 @@ iframe
 .btn.disabled {
     background: #9ca3af;
     cursor: not-allowed;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+.character-info {
+    text-align: center;
 }
